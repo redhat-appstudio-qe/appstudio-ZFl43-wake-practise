@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-pqco
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-pqco@sha256:9708d85b6d95cd50dd802c4b8ded2ff1c9925327d521136e214c1c7bc9c0facd
+        name: my-nodejs
+        resources: {}
+status: {}
